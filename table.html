@@ -1,0 +1,213 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/workspace/study/NTNU/project/Thesis-NTNU/table.md.html</title>
+<meta name="Generator" content="Vim/8.1">
+<meta name="plugin-version" content="vim8.1_v1">
+<meta name="syntax" content="mkd">
+<meta name="settings" content="number_lines,use_css,pre_wrap,no_foldcolumn,expand_tabs,line_ids,prevent_copy=">
+<meta name="colorscheme" content="dragon-energy">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #161616; }
+body { font-family: monospace; color: #ffffff; background-color: #161616; }
+* { font-size: 1em; }
+.htmlItalic { font-style: italic; }
+.Underlined { color: #80a0ff; text-decoration: underline; }
+.Error { color: #ffffff; background-color: #ff0000; padding-bottom: 1px; }
+.LineNr { color: #aaaa66; }
+.Function { color: #fe88fe; }
+.String { color: #90fe40; }
+.Comment { color: #eeee44; }
+.Visual { background-color: #a9a9a9; padding-bottom: 1px; }
+.Identifier { color: #29d8f7; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+/* function to open any folds containing a jumped-to line before jumping to it */
+function JumpToLine()
+{
+  var lineNum;
+  lineNum = window.location.hash;
+  lineNum = lineNum.substr(1); /* strip off '#' */
+
+  if (lineNum.indexOf('L') == -1) {
+    lineNum = 'L'+lineNum;
+  }
+  var lineElem = document.getElementById(lineNum);
+  /* Always jump to new location even if the line was hidden inside a fold, or
+   * we corrected the raw number to a line ID.
+   */
+  if (lineElem) {
+    lineElem.scrollIntoView(true);
+  }
+  return true;
+}
+if ('onhashchange' in window) {
+  window.onhashchange = JumpToLine;
+}
+
+-->
+</script>
+</head>
+<body onload='JumpToLine();'>
+<pre id='vimCodeElement'>
+<span id="L1" class="LineNr">  1 </span>If the table is broken, please zoom out to 90%
+<span id="L2" class="LineNr">  2 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L3" class="LineNr">  3 </span> | Aspect - engines              | Docker             | rkt                    | LXC                     | LXD     | runC | OpenVZ | Podman | Containerd | FreeBSD | Solari | CRI-O | Mesos |
+<span id="L4" class="LineNr">  4 </span> |                               |                    |                        |                         |         |      |        |        |            | Jail    | Zones  |       |       |
+<span id="L5" class="LineNr">  5 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L6" class="LineNr">  6 </span> | Required linux kernel         |                    | amd64 kernel           |                         |         |      |        |        |            |         |        |       |       |
+<span id="L7" class="LineNr">  7 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L8" class="LineNr">  8 </span> | Suport OS                     |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L9" class="LineNr">  9 </span> | Container format              |                    | Other formats as well. | Linux container (LXC)   |         |      |        |        |            |         |        |       |       |
+<span id="L10" class="LineNr"> 10 </span> |                               |                    | Docker images.         |                         |         |      |        |        |            |         |        |       |       |
+<span id="L11" class="LineNr"> 11 </span> |                               |                    | <span class="htmlItalic">Quay</span> convert           |                         |         |      |        |        |            |         |        |       |       |
+<span id="L12" class="LineNr"> 12 </span> |                               |                    | any format to ACI.     |                         |         |      |        |        |            |         |        |       |       |
+<span id="L13" class="LineNr"> 13 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L14" class="LineNr"> 14 </span> | Container hub                 |                    |                        | Yes                     |         |      |        |        |            |         |        |       |       |
+<span id="L15" class="LineNr"> 15 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L16" class="LineNr"> 16 </span> | License                       |                    |                        | GNU LGPLv2.1+           |         |      |        |        |            |         |        |       |       |
+<span id="L17" class="LineNr"> 17 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L18" class="LineNr"> 18 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L19" class="LineNr"> 19 </span> | Programming language          | Go                 | Go                     | C, Python 3, Shell, Lua |         |      |        |        |            |         |        |       |       |
+<span id="L20" class="LineNr"> 20 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L21" class="LineNr"> 21 </span> | Number of projects involes in | 100,000            |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L22" class="LineNr"> 22 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L23" class="LineNr"> 23 </span> | The criterion                 | Isolation of       |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L24" class="LineNr"> 24 </span> |                               | individual process |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L25" class="LineNr"> 25 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L26" class="LineNr"> 26 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L27" class="LineNr"> 27 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L28" class="LineNr"> 28 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L29" class="LineNr"> 29 </span> | Who found                     |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L30" class="LineNr"> 30 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L31" class="LineNr"> 31 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L32" class="LineNr"> 32 </span> | Use case                      |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L33" class="LineNr"> 33 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L34" class="LineNr"> 34 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L35" class="LineNr"> 35 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L36" class="LineNr"> 36 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L37" class="LineNr"> 37 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L38" class="LineNr"> 38 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L39" class="LineNr"> 39 </span> | Used By                       |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L40" class="LineNr"> 40 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L41" class="LineNr"> 41 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L42" class="LineNr"> 42 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L43" class="LineNr"> 43 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L44" class="LineNr"> 44 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L45" class="LineNr"> 45 </span> | Release year                  |                    | 2014                   |                         | 11/2014 |      |        |        |            |         |        |       |       |
+<span id="L46" class="LineNr"> 46 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L47" class="LineNr"> 47 </span> | Last release                  |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L48" class="LineNr"> 48 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L49" class="LineNr"> 49 </span> | Market share                  |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L50" class="LineNr"> 50 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L51" class="LineNr"> 51 </span> | Minimal requirement           |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L52" class="LineNr"> 52 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L53" class="LineNr"> 53 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L54" class="LineNr"> 54 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L55" class="LineNr"> 55 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L56" class="LineNr"> 56 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L57" class="LineNr"> 57 </span> | Supported artitechture        |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L58" class="LineNr"> 58 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L59" class="LineNr"> 59 </span> | Isolation techlogogy          |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L60" class="LineNr"> 60 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L61" class="LineNr"> 61 </span> | Num of CVE                    |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L62" class="LineNr"> 62 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L63" class="LineNr"> 63 </span> | Linux kernel patch necessary  |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L64" class="LineNr"> 64 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L65" class="LineNr"> 65 </span> | Need central Daemon process   | Yes                | No                     | No                      | Yes     | NO   |        |        |            |         |        |       |       |
+<span id="L66" class="LineNr"> 66 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L67" class="LineNr"> 67 </span> | Advantage                     |                    | Security feature       |                         |         | V    |        |        |            |         |        |       |       |
+<span id="L68" class="LineNr"> 68 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L69" class="LineNr"> 69 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L70" class="LineNr"> 70 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L71" class="LineNr"> 71 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L72" class="LineNr"> 72 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L73" class="LineNr"> 73 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L74" class="LineNr"> 74 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L75" class="LineNr"> 75 </span> | Disadvantage                  |                    |                        | Non portable            |         |      |        |        |            |         |        |       |       |
+<span id="L76" class="LineNr"> 76 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L77" class="LineNr"> 77 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L78" class="LineNr"> 78 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L79" class="LineNr"> 79 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L80" class="LineNr"> 80 </span> |                               |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L81" class="LineNr"> 81 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L82" class="LineNr"> 82 </span> | Download from                 |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L83" class="LineNr"> 83 </span> | Standard package manager      |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L84" class="LineNr"> 84 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L85" class="LineNr"> 85 </span> | Require priviledged           |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L86" class="LineNr"> 86 </span> | (Rootless container)          |                    |                        |                         |         |      |        |        |            |         |        |       |       |
+<span id="L87" class="LineNr"> 87 </span> |-------------------------------|--------------------|------------------------|-------------------------|---------|------|--------|--------|------------|---------|--------|-------|-------|
+<span id="L88" class="LineNr"> 88 </span><span class="Visual">  </span>
+<span id="L89" class="LineNr"> 89 </span><span class="Visual">  </span>
+<span id="L90" class="LineNr"> 90 </span><span class="Identifier">*</span> <span class="htmlItalic">rkt security feature:</span> , in addition to container isolation on a KVM basis, support of the kernel extension SELinux, as well as signature validation for images of the self-developed container specification App Container (appc).
+<span id="L91" class="LineNr"> 91 </span><span class="Identifier">*</span> Note: Since version 1.11, containers haven’t been run directly from Docker daemons. Instead, a daemon process called containerd is used.
+<span id="L92" class="LineNr"> 92 </span><span class="Identifier">*</span> rkt: Unlike Docker, rkt is not limited to Linux kernel functions such as cgroups and namespaces when virtualizing applications. With the runtime environment of CoreOS, containers based on KVM (kernel-based virtual machine e.g. LKVM or QEMU) and Intel Clear Container technology can also be started as fully-enclosed virtual machines.
+<span id="L93" class="LineNr"> 93 </span><span class="Identifier">*</span> How it virtialize application ?:
+<span id="L94" class="LineNr"> 94 </span><span class="Identifier">  +</span> Based on KVM
+<span id="L95" class="LineNr"> 95 </span><span class="Identifier">  +</span> Intel Clear Container technology ---&gt; start as fully-enclosed virtual machine
+<span id="L96" class="LineNr"> 96 </span><span class="Comment">&gt; Can rkt run on other OS ?</span>
+<span id="L97" class="LineNr"> 97 </span>
+<span id="L98" class="LineNr"> 98 </span>The appc specification and its implementation rkt are supported by industry giants such as Google, Red Hat, and VMware.
+<span id="L99" class="LineNr"> 99 </span><span class="Identifier">*</span> LXC: The aim of the LXC project is to create a software container environment that is as similar to a standard Linux installation as possible.
+<span id="L100" class="LineNr">100 </span><span class="Identifier">  +</span> Run container directly on native platforms
+<span id="L101" class="LineNr">101 </span><span class="Identifier">  +</span> A way to Separated processes
+<span id="L102" class="LineNr">102 </span><span class="Identifier">*</span> Docker containers and Linux containers differ in portability. If a user develops software based on LXC on a local test system, the user can’t just assume that the container will run flawlessly on other systems (e.g. a productive system). The Docker platform, however, abstracts applications much more strongly from the quality of the underlying system. This allows the same Docker container to be run on any Docker host (a system on which the Docker engine has been installed), regardless of the operating system and hardware configuration.
+<span id="L103" class="LineNr">103 </span><span class="Identifier">*</span> without a central daemon process
+<span id="L104" class="LineNr">104 </span><span class="Identifier">*</span> Unlike LXC containers Docker containers do no behave like lightweight VMs and cannot be treated as such. Docker containers are restricted to a single application by design.
+<span id="L105" class="LineNr">105 </span>You can log in to your LXC container, treat it like an OS and install your application and services and it will work as expected. You can't do that in a Docker container. The Docker base OS template is pared down to a single app environment and does not have a proper init or support things like services, daemons, syslog, cron or running multiple applications.
+<span id="L106" class="LineNr">106 </span><span class="Identifier">*</span> ---&gt; For docker: installing and running application need to follow a <span class="String">docker</span> way.
+<span id="L107" class="LineNr">107 </span><span class="Identifier">*</span> ---------------&gt;: If we want to store changed in container, we need to write to a new layer and commit <span class="Function">&lt;</span>-------<span class="Function"> slow + complexity</span>
+<span id="L108" class="LineNr">108 </span><span class="Function">* ---------------&gt;</span>: Docker constrain: one application in one container.
+<span id="L109" class="LineNr">109 </span><span class="Identifier">*</span> You can build composite or single app containers in LXC, use a btrfs file system to easily run hundreds of containers cloned from a single subvolume, solving a complex problem of space transparently at the file system level, use clones to freeze or distribute state, and CMS tools to manage it. LXC gives you a wide range of capabilities and freedom to architect and run your containers.
+<span id="L110" class="LineNr">110 </span>
+<span id="L111" class="LineNr">111 </span><span class="Identifier">*</span> LXD: Use  container base with the same exerience of virtual machine ???
+<span id="L112" class="LineNr">112 </span><span class="Identifier">*</span> * Consume less resource
+<span id="L113" class="LineNr">113 </span><span class="Identifier">*</span> * Disadvantages: Have o run on Linux Kernel
+<span id="L114" class="LineNr">114 </span><span class="Identifier">*</span> * Advantages: Client can connect to remote to LXD daemon
+<span id="L115" class="LineNr">115 </span>
+<span id="L116" class="LineNr">116 </span><span class="Identifier">*</span> Linux VServer
+<span id="L117" class="LineNr">117 </span><span class="Identifier">*</span> * On Operating system level == Software container vs Hardware container
+<span id="L118" class="LineNr">118 </span><span class="Identifier">*</span> * What is full-system container ?:
+<span id="L119" class="LineNr">119 </span><span class="Identifier">  *</span> * Compare to software container
+<span id="L120" class="LineNr">120 </span><span class="Identifier">*</span> * Not in list
+<span id="L121" class="LineNr">121 </span>
+<span id="L122" class="LineNr">122 </span><span class="Identifier">*</span> OpenVZ
+<span id="L123" class="LineNr">123 </span><span class="Identifier">*</span> * How it isolate process?:
+<span id="L124" class="LineNr">124 </span><span class="Identifier">  *</span> * libvirt
+<span id="L125" class="LineNr">125 </span>
+<span id="L126" class="LineNr">126 </span><span class="Identifier">*</span> runC
+<span id="L127" class="LineNr">127 </span><span class="Identifier">*</span> *  runC is based on the industry standard of the Open Container Initiative (OCI)
+<span id="L128" class="LineNr">128 </span><span class="Identifier">*</span> * Need a third-party tool to gen filesystem.
+<span id="L129" class="LineNr">129 </span><span class="Identifier">*</span> * Configuration is not so easy.
+<span id="L130" class="LineNr">130 </span>
+<span id="L131" class="LineNr">131 </span><span class="Identifier">*</span> Container hub :
+<span id="L132" class="LineNr">132 </span><span class="Identifier">  *</span> Docker:
+<span id="L133" class="LineNr">133 </span><span class="Identifier">  *</span> LXC: <span class="Underlined"><a href="https://us.images.linuxcontainers.org/">https://us.images.linuxcontainers.org/</a></span>
+<span id="L134" class="LineNr">134 </span>
+<span id="L135" class="LineNr">135 </span><span class="Identifier">*</span> Note:
+<span id="L136" class="LineNr">136 </span>  Containers use cgroups and namespaces in the Linux kernel to create lightweight virtualized OS environments with near bare-metal speeds
+<span id="L137" class="LineNr">137 </span>  --<span class="Error">&gt;</span> containers much faster, more portable
+<span id="L138" class="LineNr">138 </span><span class="Visual">  </span>
+<span id="L139" class="LineNr">139 </span><span class="Identifier">*</span> Compare type of virtualization: hardware | types of containers
+<span id="L140" class="LineNr">140 </span><span class="Identifier">*</span> Docker can run more applicatoins ?
+<span id="L141" class="LineNr">141 </span>
+<span id="L142" class="LineNr">142 </span>
+<span id="L143" class="LineNr">143 </span><span class="Identifier">*</span> Mesos:
+<span id="L144" class="LineNr">144 </span>  Mesos master: trung tam dieu khien, phan phoi tai nguyen
+<span id="L145" class="LineNr">145 </span>  Mesos agent: collect resource info in each machine, and run task (need to be on each slave)
+<span id="L146" class="LineNr">146 </span>  Nam run an Application: write a <span class="String">framework</span>: wraper code around application call function.
+<span id="L147" class="LineNr">147 </span>    Application binary should be in Mesos master. After running framework, it will be deliverd to the slave
+<span id="L148" class="LineNr">148 </span>      If it is running one slave A, but need some dependency in Master ?
+<span id="L149" class="LineNr">149 </span><span class="Visual">      </span>
+<span id="L150" class="LineNr">150 </span>
+<span id="L151" class="LineNr">151 </span>
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
